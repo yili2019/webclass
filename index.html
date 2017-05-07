@@ -38,51 +38,93 @@
 <html>
 	<head>
 		<style>
-			div.pagebox{
-			width:98%;border:5px solid gold
+			.box{
+				position:relative;
+				width:33.3333%;
+				float:left;
 			}
-			header,footer{
-			padding:1em;text-align:center;background-color:black;color:white;
+			.image{
+				display:block;
+				width:100%;
 			}
-			nav{
-			float:left;padding:3em;
+			.text{
+				font-size:30px;
+				color:black;
+				position:absolute;
+				top:50%;
+				left:50%;
+				transform:translate(-50%,-50%);
+				-ms-transform:translate(-50%,-50%);
 			}
-		</style>	
-		<title>
-			Web Design
-		</title>
+			.text1{
+				font-size:30px;
+				color:white;
+				position:absolute;
+				top:50%;
+				left:50%;
+				transform:translate(-50%,-50%);
+				-ms-transform:translate(-50%,-50%);
+			}
+			.pop{
+				position: absolute;
+				bottom: 10%;
+				width:100%;
+				background-color: gold;
+				transition: 1s ease;
+			}
+			.box:hover .pop{
+				bottom:0%;
+				height:100%;
+			}
+			a:-webkit-any-link {
+				color: webkit-any-link;
+				text-decoration: underline;
+				cursor: auto;
+			}
+		</style>
 	</head>
 	<body>
-		<div class="pagebox">
-			<header>
-				<h1>
-					Yi's Page
-				</h1>
-			</header>
-			<nav>
-				<ul>
-					<li>
-						March 12
-					</li>
-					<li>
-						March 19
-					</li>
-				</ul>
-			</nav>
-			<article>
-				<h1>
-					March 12
-				</h1>
-				<p>
-					My name is Yi Li.
-				</p>
-				<p>
-					welcome to my page.
-				</p>
-			</article>
-			<footer>
-				Fontana 2017 Teen Activities
-			</footer>
+		<h1 style="text-align:center; font-size:100px;">
+			HaPPY MoTHER'S DaY
+		</h1>
+		<div class="box">
+				<video width=100% height=auto controls>
+					<source src="image/to mo.mov">
+			</div>
+		</div>
+		<div class="box">
+			<img class="image" src="images/mom.png" style="width:100%">
+			<div class="pop">
+				<div class="text">
+					Ms. Wei!
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<img class="image" src="images/my dad and my mom.png" style="width:100%">
+			<div class="pop">
+				<div class="text1">
+					At SFMA!
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<img class="image" src="images/me and my mom.png" style="width:100%">
+			<div class="pop">
+				<div class="text1">
+					Me and my mom!
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<img class="image" src="images/n12.png" style="width:100%">
+			<div class="pop">
+				<div class="text">
+				<a href="http://www.google.com" style="color:black">
+					Click to view more!
+				</a>
+				</div>
+			</div>
 		</div>
 	</body>
-</html>
+</html>	
